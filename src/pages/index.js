@@ -6,10 +6,10 @@ import ArticlesComponent from "../components/articles"
 
 import "../assets/css/main.css"
 
-const IndexPage = () => (
-  <Layout>
-    <StaticQuery
-      query={graphql`
+const IndexPage = () => ( <
+    Layout >
+    <
+    StaticQuery query = { graphql `
         query {
           allStrapiArticle {
             edges {
@@ -26,17 +26,22 @@ const IndexPage = () => (
             }
           }
         }
-      `}
-      render={data => (
-        <div className="uk-section">
-          <div className="uk-container uk-container-large">
-            <h1>Strapi blog</h1>
-            <ArticlesComponent articles={data.allStrapiArticle.edges} />
-          </div>
-        </div>
-      )}
-    />
-  </Layout>
+      ` }
+    render = {
+        data => ( <
+            div className = "uk-section" >
+            <
+            div className = "uk-container uk-container-large" >
+            <
+            h1 > Lab - fe < /h1> <
+            ArticlesComponent articles = { data.allStrapiArticle.edges }
+            /> <
+            /div> <
+            /div>
+        )
+    }
+    /> <
+    /Layout>
 )
 
 export default IndexPage
