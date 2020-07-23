@@ -33,15 +33,15 @@ const IndexPage = () => ( <
             <
             div className = "uk-container uk-container-large" >
             <
-            h1 > Lab - fe < /h1> <
+            h1 > Lab - fe(stage production test) < /h1> <
             ArticlesComponent articles = { data.allStrapiArticle.edges }
-            /> <
-            /div> <
+            /> < /
+            div > <
             /div>
         )
     }
-    /> <
-    /Layout>
+    /> < /
+    Layout >
 )
 
 export default IndexPage
